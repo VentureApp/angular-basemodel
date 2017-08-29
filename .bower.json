@@ -1,0 +1,15 @@
+{
+  "name": "angular-basemodel",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "./angular-basemodel.js",
+  "ignore": [],
+  "dependencies": {
+    "angular": "1.4.12"
+  },
+  "homepage": "https://github.com/ventureapp/angular-basemodel",
+  "_release": "1.0.0",
+  "_source": "https://github.com/ventureapp/angular-basemodel",
+  "_target": "1.0.0",
+  "_originalSource": "angular-basemodel"
+}
