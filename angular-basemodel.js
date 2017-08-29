@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ngBasemodel', [])
+angular.module('angular-basemodel', [])
 
 .factory('$baseModel', function ($rootScope, $http, $log) {
       return function(id){
