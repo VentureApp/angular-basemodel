@@ -1,0 +1,25 @@
+{
+  "name": "angular-basemodel",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "angular-basemodel.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.12"
+  },
+  "homepage": "https://github.com/VentureApp/angular-basemodel",
+  "authors": [
+    "Jeff <jeff@n2op.com>"
+  ],
+  "description": "Basemodel for angular to query restful apis",
+  "keywords": [
+    "angular",
+    "basemodel"
+  ]
+}
