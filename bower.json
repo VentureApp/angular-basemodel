@@ -1,8 +1,8 @@
 {
   "name": "angular-basemodel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
-  "main": "angular-basemodel.js",
+  "main": "./angular-basemodel.js",
   "ignore": [
     "**/.*",
     "node_modules",
