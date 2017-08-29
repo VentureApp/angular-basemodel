@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Example Angular BaseModel</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.12/angular.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.12/angular-route.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+        <script type="text/javascript" src="../angular-basemodel.js"></script>
+    </head>
+    <body ng-app="baseModelExample">
+        <div id="container">
+            <h1>Example Angular BaseModel</h1>
+            <h2>jsonTestModel</h2>
+            Result - {{result}}
+        </div>
+    </body>
+    <script>
+        'use strict';
+        /**
+        * @Author Jeff Bachand
+        */
+        angular.module('baseModelExample', [
+            'ngBasemodel',
+        ]).run(function($rootScope, jsonTestModel){
+
+            var jsonTestModel = new jsonTestModel();
+
+            jsonTestModel.getKeyValue().success(function(data){
+                $rootScope.result = data.result;
+                console.log('key2', data.key2);
+            })
+
+        }).factory('jsonTestModel', function($rootScope, $baseModel){
+              return function(){
+                  var model = angular.extend(new $baseModel(), {});
+                  model.url = "http://echo.jsontest.com/";
+
+                  model.getKeyValue = function(){
+                      model.route="result/success/key2/win";
+                      return model.get();
+                  }
+
+                  return model;
+              }
+          });
+    </script>
+</html>
