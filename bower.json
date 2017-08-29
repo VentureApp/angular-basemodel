@@ -1,6 +1,6 @@
 {
   "name": "angular-basemodel",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "main": "./angular-basemodel.js",
   "ignore": [
@@ -11,7 +11,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "1.4.12"
+    "angular": "^1.4.12"
   },
   "homepage": "https://github.com/VentureApp/angular-basemodel",
   "authors": [
