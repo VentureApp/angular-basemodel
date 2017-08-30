@@ -6,7 +6,8 @@ Requires angular & underscore or lodash
 bower install angular-basemodel --save
 
 Example:
-```angular.module('baseModelExample', [
+```
+angular.module('baseModelExample', [
             'angular-basemodel',
         ]).run(function($rootScope, jsonTestModel){
             var jsonTestModel = new jsonTestModel();
@@ -25,3 +26,4 @@ Example:
                   return model;
               }
           });
+```
